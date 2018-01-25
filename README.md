@@ -1,5 +1,6 @@
 # jQuery.isInViewport
 A jQuery extension, that can distinguish, whether an element is visible within a scrollable container (typically, in the browser window).
+
 It only calculates with element and viewport width, height, and offsets. Translate CSS property, or negative margins are not part of the calculations.
 
 Check out live demo:
@@ -11,9 +12,9 @@ var results = element.isInViewport(dimension, viewport, wrapper);
 ```
 
 All parameters are optional. 
-* dimension can have values of "vertical", "horizontal", or "both", and determines, in which direction should the library check visibility. Default is "vertical"
-* viewport determines the scrollable element. Most likely the entire browser window. Defaults to $(window).
-* wrapper is the element's main content wrapper. Is required to substract its offset from the element's offset.  Defaults to $("body").
+* `dimension` can have values of `vertical`, `horizontal`, or `both`, and determines, in which direction should the library check visibility. Default is `vertical`
+* `viewport` determines the scrollable element. Most likely the entire browser window. Defaults to `$(window)`.
+* `wrapper` is the element's main content wrapper. Is required to substract its offset from the element's offset.  Defaults to `$("body")`.
 
 Example from the demo, with dimension parameter "both" returns:
 ```javascript
