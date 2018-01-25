@@ -1,0 +1,75 @@
+html{
+    font-size:16px;
+    font-faminy: Tahoma, Arial, sans-serif;
+    * {
+        box-sizing: border-box;
+    }
+}
+
+$container_width: 400px;
+$background:  rgb(240,240,240);
+
+#page{
+    max-width: $container_width * 2;
+    margin:auto;
+    h1{
+        max-width: $container_width * 2; 
+        text-align:center;
+        margin: 60px auto 20px auto;
+    }
+    #demo{
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        $align: flex-start;
+        -webkit-align-items: $align;
+        -moz-align-items: $align;
+        -ms-align-items: $align;
+        align-items: $align;
+        #viewport, #debug{
+            
+        }
+    }
+}
+
+
+#viewport{
+    background:$background;
+    max-width: $container_width;
+    height:400px;
+    overflow:scroll;
+    #wrapper{
+        width:1400px;
+        height:1400px;
+    }
+    #element{
+        background:red;
+        width:200px;
+        height:200px;
+        position:relative;
+        top:500px;
+        left:500px;
+    }
+}
+
+#debug{
+    margin-left:10px;
+    max-width: $container_width;
+    #message, #code, #buttons{
+        background: $background;
+        padding:10px;
+        margin-bottom:10px;
+    }
+    #buttons{
+        .button{
+            &.active{
+                background: $background;
+            }
+        }
+    }
+    #code{
+        overflow-x: scroll;
+    }
+}
