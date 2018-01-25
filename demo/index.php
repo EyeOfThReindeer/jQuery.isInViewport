@@ -8,6 +8,9 @@
             <h1>
                 jQuery.isInViewport demo
             </h1>
+            <p>
+                Check the source code on: <a href="https://github.com/EyeOfThReindeer/jQuery.isInViewport">GitHub page</a>.
+            </p>
             <div id="demo">
                 <div id="viewport">
                     <div id="wrapper">

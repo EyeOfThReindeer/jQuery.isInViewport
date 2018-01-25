@@ -2,6 +2,9 @@
 A jQuery extension, that can distinguish, whether an element is visible within a scrollable container (typically, in the browser window).
 It only calculates with element and viewport width, height, and offsets. Translate CSS property, or negative margins are not part of the calculations.
 
+Check out live demo:
+http://jquery-isinviewport.sobeslav.net/demo/
+
 ## Usage
 ```javascript
 var results = element.isInViewport(dimension, viewport, wrapper);
